@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Authentication'
+    
 ]
 
 MIDDLEWARE = [
@@ -50,6 +52,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Audient.urls'
+
 
 TEMPLATES = [
     {
