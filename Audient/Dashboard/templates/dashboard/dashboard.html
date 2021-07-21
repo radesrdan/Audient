@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  </head>
+
+  <body class="text-center">
+    {% if latest_post_list %}
+    <ul>
+      {% for post in latest_post_list %}
+      <li>{{post.user_name}} - {{ post.post_text }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No posts are available.</p>
+    {% endif %}
+  </body>
+</html>

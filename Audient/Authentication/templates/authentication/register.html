@@ -40,7 +40,7 @@
     <link href="static/authentication/signin.css" rel="stylesheet">
   </head>
   <body class="text-center">
-    
+
 <main class="form-signin">
   <form method="POST">
     {% csrf_token %}
@@ -50,6 +50,9 @@
     <div class="form-floating">
       <input type="text" name="username" class="form-control" id="floatingInput" placeholder="username">
       <label for="floatingInput">Username</label>
+      {% if UserNameInvalid == True%}
+      <label for="floatingInput">Username is invalid</label>
+      {% endif %}
     </div>
     <div class="form-floating">
       <input type="email" name="email" class="form-control" id="floatingInput" placeholder="email">

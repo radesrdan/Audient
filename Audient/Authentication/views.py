@@ -51,4 +51,3 @@ def register(request):
             login(request, user)
             return redirect("/dashboard")
     return render(request, 'authentication/register.html')
-
